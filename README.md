@@ -2,6 +2,13 @@
 
 The MyBatis type handlers supporting geometry types introduced in PostGIS: JDBC Geometry API
 
+
+## Requirements
+
+Java 7 or higher.
+
+The latest PostGIS JDBC API which it depends on was using the JRE7 version of PostgreSQL JDBC, so it requires Java 7 or higher.
+
 ## Configuration
 
 * If you are using MyBatis alone, add the type handlers to your `mybatis-config.xml` as follow:

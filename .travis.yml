@@ -4,14 +4,11 @@ dist: precise
 
 services:
   - postgresql
-addons:
-  postgresql: "9.4"
 
 jdk:
   - oraclejdk8
   - oraclejdk7
   - openjdk7
-  - openjdk6
 
 install:
   # Compile sources with Java 1.8
