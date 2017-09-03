@@ -1,5 +1,7 @@
 # MyBatis Type Handlers for PostGIS
 
+[![Build Status](https://travis-ci.org/eyougo/mybatis-typehandlers-postgis.svg?branch=master)](https://travis-ci.org/eyougo/mybatis-typehandlers-postgis)
+
 The MyBatis type handlers supporting geometry types introduced in PostGIS: JDBC Geometry API
 
 
