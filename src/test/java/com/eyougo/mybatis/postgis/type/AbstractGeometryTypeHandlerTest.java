@@ -116,7 +116,7 @@ public abstract class AbstractGeometryTypeHandlerTest<T extends Geometry, E exte
         SqlSession session = sqlSessionFactory.openSession();
 
         try {
-            Mapper mapper = session.getMapper(getMapperClass());
+            Mapper mapper = (Mapper) session.getMapper(getMapperClass());
             // insert (Geometry -> DB)
             {
                 GeometryEntity geometryEntity = new GeometryEntity<T>();
