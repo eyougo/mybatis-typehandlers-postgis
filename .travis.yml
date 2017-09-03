@@ -23,4 +23,4 @@ install:
 
 before_script:
   - psql -c 'create database postgis_test;' -U postgres
-  - psql -c "create extension postgis;" -U postgres
+  - psql -d "postgis_test" -U postgres -c "create extension postgis"
