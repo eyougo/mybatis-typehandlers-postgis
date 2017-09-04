@@ -17,7 +17,7 @@ public class PointTypeHandlerTest extends AbstractGeometryTypeHandlerTest<Point,
     public static void setUp() throws Exception{
         setupSqlSessionFactory("com/eyougo/mybatis/postgis/type/PointTypeHandlerTest.sql");
         Configuration configuration = sqlSessionFactory.getConfiguration();
-        configuration.getTypeHandlerRegistry().register(Point.class, PointTypeHandler.class);
+        configuration.getTypeHandlerRegistry().register(PointTypeHandler.class);
         configuration.addMapper(PointMapper.class);
     }
 

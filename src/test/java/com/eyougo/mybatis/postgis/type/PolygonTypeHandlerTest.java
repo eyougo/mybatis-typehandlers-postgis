@@ -19,7 +19,7 @@ public class PolygonTypeHandlerTest extends AbstractGeometryTypeHandlerTest<Poly
     public static void setUp() throws Exception{
         setupSqlSessionFactory("com/eyougo/mybatis/postgis/type/PolygonTypeHandlerTest.sql");
         Configuration configuration = sqlSessionFactory.getConfiguration();
-        configuration.getTypeHandlerRegistry().register(Polygon.class, PolygonTypeHandler.class);
+        configuration.getTypeHandlerRegistry().register(PolygonTypeHandler.class);
         configuration.addMapper(PolygonMapper.class);
     }
 
