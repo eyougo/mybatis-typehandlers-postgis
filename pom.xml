@@ -1,5 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.eyougo</groupId>
     <artifactId>mybatis-typehandlers-postgis</artifactId>
@@ -28,7 +27,8 @@
         <connection>scm:git:git@github.com:eyougo/mybatis-typehandlers-postgis.git</connection>
         <developerConnection>scm:git:git@github.com:eyougo/mybatis-typehandlers-postgis.git</developerConnection>
         <url>https://github.com/eyougo/mybatis-typehandlers-postgis</url>
-    </scm>
+      <tag>HEAD</tag>
+  </scm>
 
     <properties>
         <maven.compiler.source>1.7</maven.compiler.source>
@@ -82,6 +82,11 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.5.3</version>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
