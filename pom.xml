@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.eyougo</groupId>
     <artifactId>mybatis-typehandlers-postgis</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
     <packaging>jar</packaging>
 
     <name>mybatis-typehandlers-postgis</name>
@@ -27,7 +27,7 @@
         <connection>scm:git:git@github.com:eyougo/mybatis-typehandlers-postgis.git</connection>
         <developerConnection>scm:git:git@github.com:eyougo/mybatis-typehandlers-postgis.git</developerConnection>
         <url>https://github.com/eyougo/mybatis-typehandlers-postgis</url>
-      <tag>HEAD</tag>
+      <tag>mybatis-typehandlers-postgis-1.0</tag>
   </scm>
 
     <properties>
