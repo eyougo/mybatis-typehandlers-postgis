@@ -1,6 +1,7 @@
 # MyBatis Type Handlers for PostGIS
 
 [![Build Status](https://travis-ci.org/eyougo/mybatis-typehandlers-postgis.svg?branch=master)](https://travis-ci.org/eyougo/mybatis-typehandlers-postgis)
+[![Maven central](https://maven-badges.herokuapp.com/maven-central/com.eyougo/mybatis-typehandlers-postgis/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.eyougo/mybatis-typehandlers-postgis)
 
 The MyBatis type handlers supporting geometry types introduced in PostGIS: JDBC Geometry API
 
@@ -11,15 +12,28 @@ Java 7 or higher.
 
 The latest PostGIS JDBC API which it depends on was using the JRE7 version of PostgreSQL JDBC, so it requires Java 7 or higher.
 
+
+## Installation
+
+If you are using Maven add the following dependency to your `pom.xml`:
+
+```xml
+<dependency>
+    <groupId>com.eyougo</groupId>
+    <artifactId>mybatis-typehandlers-postgis</artifactId>
+    <version>1.0</version>
+</dependency>
+```
+
 ## Configuration
 
 * If you are using MyBatis alone, add the type handlers to your `mybatis-config.xml` as follow:
 
 ```xml
 <typeHandlers>
-  <!-- ... -->
-  <typeHandler handler="com.eyougo.mybatis.postgis.type.PointTypeHandler" />
-  <typeHandler handler="com.eyougo.mybatis.postgis.type.PolygonTypeHandler" />
+    <!-- ... -->
+    <typeHandler handler="com.eyougo.mybatis.postgis.type.PointTypeHandler" />
+    <typeHandler handler="com.eyougo.mybatis.postgis.type.PolygonTypeHandler" />
 </typeHandlers>
 ```
 * If you are using MyBatis with **Spring**, add the type handlers package to the Spring configuration as follow:
