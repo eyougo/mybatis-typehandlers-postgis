@@ -76,12 +76,12 @@ mybatis:
 
 The following type handlers are supported:
 
-| Type handler |  PostGIS Geometry API type | JDBC types | Available version |
-| ------------ | ----------------------- | ---------- | :------------------: | 
-| `PointTypeHandler` | `org.postgis.Point` | `OTHER` |  1.0 |
-| `PolygonTypeHandler` | `org.postgis.Polygon` | `OTHER` |  1.0 |
-| `LineStringTypeHandler` | `org.postgis.LineString` | `OTHER` |  1.0 |
-| `MultiPointTypeHandler` | `org.postgis.MultiPoint` | `OTHER` |  1.0 |
+| Type handler |  PostGIS Geometry API type | Available version |
+| ------------ | -----------------------  | :------------------: | 
+| `PointTypeHandler` | `org.postgis.Point` |  1.0 |
+| `PolygonTypeHandler` | `org.postgis.Polygon`  |  1.0 |
+| `LineStringTypeHandler` | `org.postgis.LineString` |  1.0 |
+| `MultiPointTypeHandler` | `org.postgis.MultiPoint` |  1.0 |
 
 
 > **Note:**
